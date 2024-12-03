@@ -1,10 +1,12 @@
-// api.ts
 import axios from 'axios';
 
-const API_KEY = 'b2883580948205875d86af4877e15dfa'; 
+const API_KEY = 'YOUR_API_KEY';
 const BASE_URL = 'https://api.openweathermap.org/data/2.5/weather';
 
-export const fetchWeatherByCity = async (city: string, unit: 'metric' | 'imperial') => {
+export const fetchWeatherByCity = async (
+  city: string,
+  unit: 'metric' | 'imperial'
+) => {
   try {
     const response = await axios.get(BASE_URL, {
       params: {
@@ -19,7 +21,11 @@ export const fetchWeatherByCity = async (city: string, unit: 'metric' | 'imperia
   }
 };
 
-export const fetchWeatherByLocation = async (lat: number, lon: number, unit: 'metric' | 'imperial') => {
+export const fetchWeatherByLocation = async (
+  lat: number,
+  lon: number,
+  unit: 'metric' | 'imperial'
+) => {
   try {
     const response = await axios.get(BASE_URL, {
       params: {

@@ -35,7 +35,12 @@ yarn install
 npm install
 ```
 
-### 3. Install Expo Development Build
+### 3. Add OpenWeather Api key
+
+Go to `src/api`
+replace "YOUR_API_KEY" with openweathermap api key.
+
+### 4. Install Expo Development Build
 
 Expo allows for a seamless development experience for React Native apps. To use Expo's development build, follow these steps:
 
@@ -50,7 +55,7 @@ npx expo run:android   # For Android
 npx expo run:ios  # For IOs
 ```
 
-### 4. Additional Resources
+### 5. Additional Resources
 
 For further reading and resources, here are some helpful links:
 
